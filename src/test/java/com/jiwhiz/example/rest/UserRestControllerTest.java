@@ -41,7 +41,7 @@ public class UserRestControllerTest {
         mockMvc.perform(get("/api/user"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.name", is ("Yuan")))
+                .andExpect(jsonPath("$.name", is ("Yuan Ji")))
                 .andExpect(jsonPath("$.email", is("yuan@jiwhiz.com")))
                 ;
     } 
