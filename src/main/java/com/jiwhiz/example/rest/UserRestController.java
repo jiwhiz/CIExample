@@ -19,7 +19,7 @@ public class UserRestController {
     @RequestMapping(method = RequestMethod.GET, value = "/api/user", produces = MediaType.APPLICATION_JSON_VALUE)
     public HttpEntity<UserProfile> getCurrentUserProfile() {
         LOGGER.debug("==>UserRestController.getCurrentUserProfie()");
-        UserProfile profile = new UserProfile("Yuan Ji", "yuan@jiwhiz.com");
+        UserProfile profile = new UserProfile("Yuan", "yuan@jiwhiz.com");
         return new ResponseEntity<UserProfile>(profile, HttpStatus.OK);
     }
 
