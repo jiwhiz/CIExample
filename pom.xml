@@ -16,6 +16,8 @@
 		<slf4j.version>1.7.5</slf4j.version>
 		<spring.version>4.0.0.RELEASE</spring.version>
 		<spring-security.version>3.2.0.RELEASE</spring-security.version>
+		<spring-hateoas.version>0.9.0.RELEASE</spring-hateoas.version>
+		<spring-plugin.version>0.8.0.RELEASE</spring-plugin.version>
 		<jackson.version>2.3.0</jackson.version>
 		<hibernate.version>4.2.6.Final</hibernate.version>
 		<junit.version>4.11</junit.version>
@@ -158,6 +160,16 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
 			<version>${spring-security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.hateoas</groupId>
+			<artifactId>spring-hateoas</artifactId>
+			<version>${spring-hateoas.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.plugin</groupId>
+			<artifactId>spring-plugin-core</artifactId>
+			<version>${spring-plugin.version}</version>
 		</dependency>
 
 		<!-- Cloud Foundry runtime -->
